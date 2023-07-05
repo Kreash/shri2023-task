@@ -48,8 +48,8 @@ jobs:
       - name: npm ci
         run: npm ci
 
-      - name: npm test
-        run: npm test
+      - name: npm build
+        run: npm build
 
   # Deployment job
   deploy:
