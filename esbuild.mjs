@@ -18,10 +18,10 @@ await esbuild.build({
   bundle: true,
   minify: true,
   loader: { '.png': 'file', '.svg': 'file', '.woff2': 'file' },
-  outdir: 'dist/shri2023-task',
+  outdir: 'dist/shri2023-task/',
 });
 
 
 
 const indexHtml = await readFile('src/index.html');
-fs.writeFileSync('dist/index.html', indexHtml);
+fs.writeFileSync('dist/shri2023-task/index.html', indexHtml);
