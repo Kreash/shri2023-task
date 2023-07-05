@@ -18,6 +18,7 @@ await esbuild.build({
   assetNames: 'assets/[name]',
   bundle: true,
   minify: true,
+  treeShaking: true,
   loader: { '.png': 'file', '.svg': 'file', '.woff2': 'file' },
   outdir: 'dist/shri2023-task/',
 });
