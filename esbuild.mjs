@@ -15,6 +15,7 @@ function readFile(file) {
 
 await esbuild.build({
   entryPoints: ['src/scripts/main.jsx', 'src/styles/style.css', 'src/styles/fonts.css'],
+  assetNames: 'assets/[name]',
   bundle: true,
   minify: true,
   loader: { '.png': 'file', '.svg': 'file', '.woff2': 'file' },
