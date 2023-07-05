@@ -23,8 +23,10 @@ concurrency:
 
 jobs:
   # Build job
-  build:
+  esbuild:
+    name: esbuild CI
     runs-on: ubuntu-latest
+
     steps:
       - name: Set up Go 1.x
         uses: actions/setup-go@v2
@@ -48,8 +50,8 @@ jobs:
       - name: npm ci
         run: npm ci
 
-      - name: npm build
-        run: npm build
+      - name: npm run build
+        run: npm run build
 
   # Deployment job
   deploy:
