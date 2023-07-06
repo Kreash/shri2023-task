@@ -14,7 +14,7 @@ function readFile(file) {
 }
 
 await esbuild.build({
-  entryPoints: ['src/scripts/main.jsx', 'src/styles/style.css', 'src/styles/fonts.css'],
+  entryPoints: ['src/scripts/main.jsx', 'src/styles/style.css'],
   assetNames: 'assets/[name]',
   bundle: true,
   minify: true,
