@@ -226,7 +226,7 @@ body {
     font-size: 0.8125rem;
     font-family: inherit;
     font-weight: bold;
-    background: no-repeat calc(100% - 1rem) 50% #FFD93E url(../assets/arrow-down.svg);
+    background: no-repeat calc(100% - 1rem) 50% #FFD93E url(../assets/arrow-down_new.svg);
     appearance: none;
 }
 
@@ -547,7 +547,8 @@ body {
     right: 0;
     width: 18px;
     bottom: 10px;
-    background: no-repeat 50% 50% url(./../assets/arrow-left.png);
+    background: no-repeat 50% 50% url(./../assets/arrow-left_new.svg);
+    background-size: 100%;
     transform: rotate(180deg);
     cursor: pointer;
 }
