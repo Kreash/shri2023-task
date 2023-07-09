@@ -11,5 +11,10 @@ export default defineConfig({
     // }),
     react(),
   ],
+  build: {
+    minify: true,
+    cssMinify: true,
+    outDir: 'shri2023-task',
+  }
   // optimizeDeps: { include: ['cross-fetch', 'react/jsx-runtime'] },
 });
