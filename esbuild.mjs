@@ -23,5 +23,5 @@ await esbuild.build({
   outdir: 'dist/shri2023-task/',
 });
 
-const indexHtml = await readFile('src/index.html');
+const indexHtml = await readFile('src/static.html');
 fs.writeFileSync('dist/shri2023-task/index.html', indexHtml);
