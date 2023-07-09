@@ -65,7 +65,7 @@ body {
     height: 100%;
     margin: 0 0 0 auto;
     padding: 0;
-    background: 50% 50% no-repeat transparent url(../assets/icon_list_m@1x.svg);
+    background: 50% 50% no-repeat transparent url(../assets/icon_list_m_new.svg);
     border: none;
     border-radius: 0;
     appearance: none;
@@ -394,7 +394,7 @@ body {
 }
 
 .hero-dashboard__icon_rain {
-    background-image: url(../assets/cloud-drizzle.svg);
+    background-image: url(../assets/cloud-drizzle_new.svg);
 }
 
 .hero-dashboard__schedule {
@@ -462,15 +462,15 @@ body {
 }
 
 .event__icon_temp {
-    background-image: url(../assets/icon_temperature.svg);
+    background-image: url(../assets/icon_temperature_new.svg);
 }
 
 .event__icon_temp2 {
-    background-image: url(../assets/icon_temperature_2.svg);
+    background-image: url(../assets/icon_temperature_2_new.svg);
 }
 
 .event__icon_light {
-    background-image: url(../assets/icon_sun.svg);
+    background-image: url(../assets/icon_sun_new.svg);
 }
 
 .event__icon_light2 {
@@ -478,7 +478,7 @@ body {
 }
 
 .event__icon_schedule {
-    background-image: url(../assets/icon_scheduled.svg);
+    background-image: url(../assets/icon_scheduled_new.svg);
 }
 
 .event__title {
