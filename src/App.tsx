@@ -1,6 +1,16 @@
-﻿'use strict';
-import React from 'react';
-import ReactDOM from 'react-dom';
+('use strict');
+import './App.css';
+import React, { MutableRefObject } from 'react';
+
+function App() {
+  return (
+    <>
+      <Header />
+      <Main />
+    </>
+  );
+}
+export default App;
 
 function Header() {
   let [expanded, setExpanded] = React.useState(false);
@@ -41,8 +51,8 @@ function Header() {
   );
 }
 
-function Event(props) {
-  const ref = React.useRef();
+function Event(props: any) {
+  const ref: MutableRefObject<any> = React.useRef();
 
   const { onSize } = props;
 
@@ -65,7 +75,7 @@ function Event(props) {
   );
 }
 
-const TABS = {
+const TABS: any = {
   all: {
     title: 'Все',
     items: [
@@ -200,7 +210,7 @@ for (let i = 0; i < 6; ++i) {
 const TABS_KEYS = Object.keys(TABS);
 
 function Main() {
-  const ref = React.useRef();
+  const ref: MutableRefObject<any> = React.useRef();
   const initedRef = React.useRef(false);
   const [activeTab, setActiveTab] = React.useState('');
   const [hasRightScroll, setHasRightScroll] = React.useState(false);
@@ -212,18 +222,18 @@ function Main() {
     }
   });
 
-  const onSelectInput = (event) => {
+  const onSelectInput = (event: any) => {
     setActiveTab(event.target.value);
   };
 
-  let sizes = [];
-  const onSize = (size) => {
+  let sizes: any[] = [];
+  const onSize = (size: any) => {
     sizes = [...sizes, size];
   };
 
   React.useEffect(() => {
     const sumWidth = sizes.reduce((acc, item) => acc + item.width, 0);
-    const sumHeight = sizes.reduce((acc, item) => acc + item.height, 0);
+    // const sumHeight = sizes.reduce((acc, item) => acc + item.height, 0);
 
     const newHasRightScroll = sumWidth > ref.current.offsetWidth;
     if (newHasRightScroll !== hasRightScroll) {
@@ -305,7 +315,7 @@ function Main() {
                 key={key}
                 role="tab"
                 aria-selected={key === activeTab ? 'true' : 'false'}
-                tabIndex={key === activeTab ? '0' : undefined}
+                tabIndex={key === activeTab ? 0 : undefined}
                 className={'section__tab' + (key === activeTab ? ' section__tab_active' : '')}
                 id={`tab_${key}`}
                 aria-controls={`panel_${key}`}
@@ -328,7 +338,7 @@ function Main() {
               aria-labelledby={`tab_${key}`}
             >
               <ul className="section__panel-list">
-                {TABS[key].items.map((item, index) => (
+                {TABS[key].items.map((item: any, index: any) => (
                   <Event key={index} {...item} onSize={onSize} />
                 ))}
               </ul>
@@ -340,11 +350,3 @@ function Main() {
     </main>
   );
 }
-
-const root = ReactDOM.createRoot(document.getElementById('app'));
-root.render(
-  <>
-    <Header />
-    <Main />
-  </>,
-);

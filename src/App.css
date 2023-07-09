@@ -1,4 +1,4 @@
-@import 'reset.css';
+@import './styles/reset.css';
 
 html {
     font-size: 100%;
@@ -55,7 +55,7 @@ body {
     width: 6.75rem;
     height: 2.3125rem;
     margin-right: 3.25rem;
-    background: no-repeat 50% 50% url(../assets/logo.svg);
+    background: no-repeat 50% 50% url(./assets/logo.svg);
     background-size: contain;
 }
 
@@ -65,7 +65,7 @@ body {
     height: 100%;
     margin: 0 0 0 auto;
     padding: 0;
-    background: 50% 50% no-repeat transparent url(../assets/icon_list_m_new.svg);
+    background: 50% 50% no-repeat transparent url(./assets/icon_list_m_new.svg);
     border: none;
     border-radius: 0;
     appearance: none;
@@ -226,7 +226,7 @@ body {
     font-size: 0.8125rem;
     font-family: inherit;
     font-weight: bold;
-    background: no-repeat calc(100% - 1rem) 50% #FFD93E url(../assets/arrow-down_new.svg);
+    background: no-repeat calc(100% - 1rem) 50% #FFD93E url(./assets/arrow-down_new.svg);
     appearance: none;
 }
 
@@ -278,7 +278,7 @@ body {
     display: flex;
     gap: 0.9375rem;
     height: 20.6875rem;
-    background: no-repeat 50% 50% url(../assets/bg@2x.webp);
+    background: no-repeat 50% 50% url(./assets/bg@2x.webp);
     /*background-size: cover;*/
     background-size: 1260px;
     border-radius: 1.25rem;
@@ -290,7 +290,7 @@ body {
         gap: 1.25rem;
         height: auto;
         margin-bottom: 0.3125rem;
-        background-image: url(../assets/bg.webp);
+        background-image: url(./assets/bg.webp);
     }
 }
 
@@ -394,7 +394,7 @@ body {
 }
 
 .hero-dashboard__icon_rain {
-    background-image: url(../assets/cloud-drizzle_new.svg);
+    background-image: url(./assets/cloud-drizzle_new.svg);
 }
 
 .hero-dashboard__schedule {
@@ -462,23 +462,23 @@ body {
 }
 
 .event__icon_temp {
-    background-image: url(../assets/icon_temperature_new.svg);
+    background-image: url(./assets/icon_temperature_new.svg);
 }
 
 .event__icon_temp2 {
-    background-image: url(../assets/icon_temperature_2_new.svg);
+    background-image: url(./assets/icon_temperature_2_new.svg);
 }
 
 .event__icon_light {
-    background-image: url(../assets/icon_sun_new.svg);
+    background-image: url(./assets/icon_sun_new.svg);
 }
 
 .event__icon_light2 {
-    background-image: url(../assets/icon_sun_2_new.svg);
+    background-image: url(./assets/icon_sun_2_new.svg);
 }
 
 .event__icon_schedule {
-    background-image: url(../assets/icon_scheduled_new.svg);
+    background-image: url(./assets/icon_scheduled_new.svg);
 }
 
 .event__title {
@@ -547,7 +547,7 @@ body {
     right: 0;
     width: 18px;
     bottom: 10px;
-    background: no-repeat 50% 50% url(./../assets/arrow-left_new.svg);
+    background: no-repeat 50% 50% url(./assets/arrow-left_new.svg);
     background-size: 100%;
     transform: rotate(180deg);
     cursor: pointer;
